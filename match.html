@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>G’s FC</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700"rel="stylesheet">
+  <link href='css/main.css' rel='stylesheet' />
+  <link href='css/main-2.css' rel='stylesheet' />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body id="match">
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <header>
+    
+    
+    <nav>
+        <ul class="global-nav">
+              <li class="logo"><a href="index.html"><img src="img/header_logo.png" alt="G’s-Academy-Tokyo"></a></li>
+              <li class="bar"><a href="about.html">About</a></li>
+              <li class="bar"><a href="match.html">Match</a></li>
+              <li class="bar"><a href="news.html">News</a></li>
+              <li class="bar"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  
+
+  <!-- wrap starts -->
+
+  <div class="thumbnail">
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/1.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/2.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/3.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/4.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/5.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/6.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/7.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/8.jpg" alt=""></div>
+</div>
+<div class="thumbnail-thumb">
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/1.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/2.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/3.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/4.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/5.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/6.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/7.jpg" alt=""></div>
+    <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/8.jpg" alt=""></div>
+</div>
+
+  <!-- wrap ends -->
+
+  <div id='calendar'></div>
+  <footer>
+    <small>(C)G's-Academy-Tokyo.</small>
+  </footer>
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script src='js/match.js'></script>
+  
+  <script src='js/main.js'></script>
+  <script src='js/main-2.js'></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // DOMを取得
+      var calendarEl = document.getElementById('calendar');
+  
+      // 指定DOMにカレンダープラグインを適用する
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'dayGrid' ]
+      });
+      calendar.render();
+    });
+  </script>
+  
+
+</body>
+
+</html>
